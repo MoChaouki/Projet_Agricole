@@ -1,4 +1,3 @@
-# Projet_Agricole
 # Projet Agricole Intégré
 
 Ce projet vise à construire un tableau de bord intégré permettant de visualiser et d'analyser les données agricoles. Il combine des visualisations interactives en utilisant **Bokeh**, **Folium**, et **Streamlit**.
