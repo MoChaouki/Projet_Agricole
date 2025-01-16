@@ -54,9 +54,13 @@ projet_agricole/
    ```
 
 3. **Installer les dépendances** :
-   ```bash
-   pip install -r requirements.txt
-   ```
+   streamlit
+folium
+bokeh
+pandas
+numpy
+scikit-learn
+statsmodels
 
 4. **Vérifier la structure des données** :
    Placez tous les fichiers CSV dans le dossier `data/` et assurez-vous que leurs noms correspondent aux fichiers référencés dans les scripts.
