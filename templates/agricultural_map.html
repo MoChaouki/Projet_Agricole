@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf93bf75331bad073f6744364fc12e00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf93bf75331bad073f6744364fc12e00" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf93bf75331bad073f6744364fc12e00 = L.map(
+                "map_cf93bf75331bad073f6744364fc12e00",
+                {
+                    center: [34.07333333333333, -6.826666666666667],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0a624ed050753002ec2c4575cdec51a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f0a624ed050753002ec2c4575cdec51a.addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+            var circle_marker_e742532118701752a0ba46e3a9686c15 = L.circleMarker(
+                [34.05, -6.83],
+                {"bubblingMouseEvents": true, "color": "#aad500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aad500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+        var popup_c174da949bf7b7e285430dde828d144e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41d4f2e316cd9b0cb3e3a4dd5968653c = $(`<div id="html_41d4f2e316cd9b0cb3e3a4dd5968653c" style="width: 100.0%; height: 100.0%;">Crop: Wheat<br>Yield: 8 tonnes/ha</div>`)[0];
+                popup_c174da949bf7b7e285430dde828d144e.setContent(html_41d4f2e316cd9b0cb3e3a4dd5968653c);
+            
+        
+
+        circle_marker_e742532118701752a0ba46e3a9686c15.bindPopup(popup_c174da949bf7b7e285430dde828d144e)
+        ;
+
+        
+    
+    
+            var circle_marker_e0cdcb018f6b85ed7a5bb65cdbb64758 = L.circleMarker(
+                [34.07, -6.85],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+        var popup_bd195823d4d789ddf0249c249280ce70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_757e1f3ba46617e14bc3bd1766023d13 = $(`<div id="html_757e1f3ba46617e14bc3bd1766023d13" style="width: 100.0%; height: 100.0%;">Crop: Corn<br>Yield: 6 tonnes/ha</div>`)[0];
+                popup_bd195823d4d789ddf0249c249280ce70.setContent(html_757e1f3ba46617e14bc3bd1766023d13);
+            
+        
+
+        circle_marker_e0cdcb018f6b85ed7a5bb65cdbb64758.bindPopup(popup_bd195823d4d789ddf0249c249280ce70)
+        ;
+
+        
+    
+    
+            var circle_marker_043c5ce709296503c6e953a786386db7 = L.circleMarker(
+                [34.1, -6.8],
+                {"bubblingMouseEvents": true, "color": "#55ab00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55ab00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+        var popup_b3c94ebd2f7eceb96e825b8e95bb90d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be54ddb84828f634f327f5e02f7a76ee = $(`<div id="html_be54ddb84828f634f327f5e02f7a76ee" style="width: 100.0%; height: 100.0%;">Crop: Soybean<br>Yield: 10 tonnes/ha</div>`)[0];
+                popup_b3c94ebd2f7eceb96e825b8e95bb90d0.setContent(html_be54ddb84828f634f327f5e02f7a76ee);
+            
+        
+
+        circle_marker_043c5ce709296503c6e953a786386db7.bindPopup(popup_b3c94ebd2f7eceb96e825b8e95bb90d0)
+        ;
+
+        
+    
+    
+            var marker_0c08a080e0e07dbce3e7a8058a62f35c = L.marker(
+                [34.05, -6.83],
+                {
+}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+            var icon_5228d614946fcfc40918cdac286f0da2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c08a080e0e07dbce3e7a8058a62f35c.setIcon(icon_5228d614946fcfc40918cdac286f0da2);
+        
+    
+        var popup_f64e20b89747366b0804b303516f60b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de8b127e07aaebc1e4c9c2ff7444d69f = $(`<div id="html_de8b127e07aaebc1e4c9c2ff7444d69f" style="width: 100.0%; height: 100.0%;">NDVI: 0.7<br>Crop: Wheat</div>`)[0];
+                popup_f64e20b89747366b0804b303516f60b3.setContent(html_de8b127e07aaebc1e4c9c2ff7444d69f);
+            
+        
+
+        marker_0c08a080e0e07dbce3e7a8058a62f35c.bindPopup(popup_f64e20b89747366b0804b303516f60b3)
+        ;
+
+        
+    
+    
+            var marker_1c33630d766e0432ec2fa55236df98c4 = L.marker(
+                [34.07, -6.85],
+                {
+}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+            var icon_83c3cf53d1b22a84a97981fa746a6b49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c33630d766e0432ec2fa55236df98c4.setIcon(icon_83c3cf53d1b22a84a97981fa746a6b49);
+        
+    
+        var popup_16957f6f4560077d8ff02ae1eeb3c658 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77e45cbe9a41dde0a2ce6f8fd4b5db45 = $(`<div id="html_77e45cbe9a41dde0a2ce6f8fd4b5db45" style="width: 100.0%; height: 100.0%;">NDVI: 0.6<br>Crop: Corn</div>`)[0];
+                popup_16957f6f4560077d8ff02ae1eeb3c658.setContent(html_77e45cbe9a41dde0a2ce6f8fd4b5db45);
+            
+        
+
+        marker_1c33630d766e0432ec2fa55236df98c4.bindPopup(popup_16957f6f4560077d8ff02ae1eeb3c658)
+        ;
+
+        
+    
+    
+            var marker_6e3d0da123c87ea4e555ae4c80dae0d9 = L.marker(
+                [34.1, -6.8],
+                {
+}
+            ).addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+    
+            var icon_b422d87645168a6b2547fbb7b6368db4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6e3d0da123c87ea4e555ae4c80dae0d9.setIcon(icon_b422d87645168a6b2547fbb7b6368db4);
+        
+    
+        var popup_97afb49ad89c22525b08c946ecf9b7f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b10b2d326da4261347ce685e3dc57881 = $(`<div id="html_b10b2d326da4261347ce685e3dc57881" style="width: 100.0%; height: 100.0%;">NDVI: 0.8<br>Crop: Soybean</div>`)[0];
+                popup_97afb49ad89c22525b08c946ecf9b7f7.setContent(html_b10b2d326da4261347ce685e3dc57881);
+            
+        
+
+        marker_6e3d0da123c87ea4e555ae4c80dae0d9.bindPopup(popup_97afb49ad89c22525b08c946ecf9b7f7)
+        ;
+
+        
+    
+    
+            var heat_map_684d31b582fd4f09ee870a87291a8c22 = L.heatLayer(
+                [[34.05, -6.83], [34.07, -6.85], [34.1, -6.8]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 1,
+  "radius": 15,
+  "blur": 10,
+}
+            );
+        
+    
+            heat_map_684d31b582fd4f09ee870a87291a8c22.addTo(map_cf93bf75331bad073f6744364fc12e00);
+        
+</script>
+</html>
